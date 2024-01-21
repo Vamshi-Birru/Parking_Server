@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
-//const { connectDB } = require("./config/db.config");
+
 const userRouter = require("./controllers/user");
 const handleError = require('./utils/errorHandler');
 const { isLoggedIn } = require("./controllers/middleware");
@@ -28,7 +28,7 @@ const port = process.env.PORT || 5000;
 app.use(cors())
 
 
-const url = "mongodb+srv://nandupvt02:"+pass_word+"@parkeasy.rhkw5gi.mongodb.net/?retryWrites=true&w=majority"
+const url = "mongodb+srv://Robert:Ironman@cluster0.4mtik7b.mongodb.net/"
 
 mongoose.connect(url, {
     useNewUrlParser: true,
